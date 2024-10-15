@@ -21,26 +21,24 @@
 }
 ```
 
-Consists of
+## Consists of
 
-. Version: policy language version, always include "2012-10-17"
+- Version: policy language version, always include "2012-10-17"
 
-. Id: an identifier for the policy (optional)
+- Id: an identifier for the policy (optional)
 
-. Statement: one or more individual statement (required)
+- Statement: one or more individual statement (required)
 
+## Statements consist of
 
+- Sid: and identifier for the statement (optional)
 
-Statements consist of
+- Effect: whether the statement allows or denies access (Allows, Deny)
 
-. Sid: and identifier for the statement (optional)
+- Principal: account/user/role to which this policy applied to
 
-. Effect: whether the statement allows or denies access (Allows, Deny)
+- Action: list of actions this policy allows or denies
 
-. Principal: account/user/role to which this policy applied to
+- Resource: list of resources to which the actions applied to
 
-. Action: list of actions this policy allows or denies
-
-. Resource: list of resources to which the actions applied to
-
-. Condition: Condition for when this policy is in effect (optional)
+- Condition: Condition for when this policy is in effect (optional)
